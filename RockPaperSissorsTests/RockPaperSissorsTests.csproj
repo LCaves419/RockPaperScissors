@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9347929B-139A-4529-8ABD-0D42CE096397}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{824729A7-1036-4137-B312-DBDFF4AE8764}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RockPaperSissors</RootNamespace>
-    <AssemblyName>RockPaperSissors</AssemblyName>
+    <RootNamespace>RockPaperSissorsTests</RootNamespace>
+    <AssemblyName>RockPaperSissorsTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,22 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\Choice.cs" />
-    <Compile Include="Enums\Result.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Implementations\ComputerPlayer.cs" />
-    <Compile Include="Implementations\ComputerPlayerWeighted.cs" />
-    <Compile Include="Implementations\Human.cs" />
-    <Compile Include="Implementations\Player.cs" />
-    <Compile Include="Interfaces\IChoiceSlector.cs" />
-    <Compile Include="MatchResult.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="PlayerTests\PaperPlayer.cs" />
+    <Compile Include="PlayerTests\RockPplayer.cs" />
+    <Compile Include="PlayerTests\ScissorsPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RockPaperSissorsTests.cs" />
+    <Compile Include="TestGame.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\RockPaperSissors\RockPaperSissors.csproj">
+      <Project>{9347929b-139a-4529-8abd-0d42ce096397}</Project>
+      <Name>RockPaperSissors</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,9 @@
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\bin\Debug\RockPaperSissorsTests.dll
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\bin\Debug\RockPaperSissorsTests.pdb
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\bin\Debug\nunit.framework.dll
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\bin\Debug\RockPaperSissors.exe
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\bin\Debug\RockPaperSissors.pdb
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\bin\Debug\nunit.framework.xml
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\obj\Debug\RockPaperSissorsTests.csprojResolveAssemblyReference.cache
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\obj\Debug\RockPaperSissorsTests.dll
+C:\repos\RockPaper\RockPaperSissors\RockPaperSissorsTests\obj\Debug\RockPaperSissorsTests.pdb

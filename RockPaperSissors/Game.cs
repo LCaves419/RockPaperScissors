@@ -13,11 +13,12 @@ namespace RockPaperSissors
         public void playRound()
         {
             Player p1 = new Human("Player 1");
-            Player p2 = new ComputerPlayer("Player 2");
+            //Player p2 = new ComputerPlayer("Player 2");
+            ComputerPlayerWeighted p2 = new ComputerPlayerWeighted("Player 2");
 
             MatchResult result = new MatchResult();
             result.Player1_Choice = p1.GetChoice();
-            result.Player2_Choice = p2.GetChoice();
+            result.Player2_Choice = p2.GetChoiceWeighted();
 
             if (result.Player1_Choice == result.Player2_Choice)
             {
@@ -34,10 +35,13 @@ namespace RockPaperSissors
                 result.Match_Result = Result.Loss;
             }
             ProcessResult(p1,p2,result);
+            Console.WriteLine("Rock Count : {0} ", ComputerPlayerWeighted.CountR);
+            Console.WriteLine("Scissors Count : {0}", ComputerPlayerWeighted.CountS);
+            Console.WriteLine("Paper Count : {0} ", ComputerPlayerWeighted.CountP);
             //Console.WriteLine(Enum.GetName(typeof(Choice),p1.GetChoice()));
         }
         
-        public void ProcessResult(Player player1, Player player2, MatchResult result)
+        public int ProcessResult(Player player1, Player player2, MatchResult result)
         {
             Console.WriteLine("{0} picked  {1}. {2} picked {3}", player1.Name,
                 Enum.GetName(typeof(Choice),result.Player1_Choice),
@@ -47,14 +51,18 @@ namespace RockPaperSissors
             {
                 case Enums.Result.Win:
                     Console.WriteLine("{0} Wins!", player1.Name);
-                    break;
+                    return 1;
                 case Enums.Result.Loss:
                     Console.WriteLine("{0} Wins!", player2.Name);
-                    break;
+                    return 2;
                 default:
                     Console.WriteLine("You both tie!");
-                    break;
+                    return 0;
             }
         }
+      
     }
+
+        
+
 }

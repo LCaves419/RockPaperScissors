@@ -18,5 +18,7 @@ namespace RockPaperSissors.Implementations
         }
 
         public abstract Choice GetChoice();
+
+
     }
 }

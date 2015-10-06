@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RockPaperSissors;
 using RockPaperSissors.Implementations;
 
 
 namespace RockPaperSissors
 {
-    class Program
+    public class Program
     {
-       
         static void Main(string[] args)
         {
             Console.WriteLine("Rock, Paper,Sissors.....");

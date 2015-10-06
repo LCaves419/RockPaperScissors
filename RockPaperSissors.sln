@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperSissors", "RockPaperSissors\RockPaperSissors.csproj", "{9347929B-139A-4529-8ABD-0D42CE096397}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperSissorsTests", "RockPaperSissorsTests\RockPaperSissorsTests.csproj", "{824729A7-1036-4137-B312-DBDFF4AE8764}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9347929B-139A-4529-8ABD-0D42CE096397}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9347929B-139A-4529-8ABD-0D42CE096397}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9347929B-139A-4529-8ABD-0D42CE096397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824729A7-1036-4137-B312-DBDFF4AE8764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824729A7-1036-4137-B312-DBDFF4AE8764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824729A7-1036-4137-B312-DBDFF4AE8764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824729A7-1036-4137-B312-DBDFF4AE8764}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
