@@ -17,12 +17,11 @@ namespace RockPaperSissors
             Game newGame = new Game();
 
             string input = "";
-
             do
             {
                 newGame.playRound();
                
-                Console.Write("Would you like to play again? (enter \"Q\" to quit)");
+                Console.Write("\nWould you like to play again? (enter \"Q\" to quit)");
                 input = Console.ReadLine();
 
             } while (input.ToUpper() != "Q");

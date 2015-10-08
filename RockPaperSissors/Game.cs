@@ -35,9 +35,10 @@ namespace RockPaperSissors
                 result.Match_Result = Result.Loss;
             }
             ProcessResult(p1,p2,result);
-            Console.WriteLine("Rock Count : {0} ", ComputerPlayerWeighted.CountR);
-            Console.WriteLine("Scissors Count : {0}", ComputerPlayerWeighted.CountS);
-            Console.WriteLine("Paper Count : {0} ", ComputerPlayerWeighted.CountP);
+
+            Console.WriteLine("\nComputer Rock Count : {0} ", ComputerPlayerWeighted.CountR);
+            Console.WriteLine("Computer Scissors Count : {0}", ComputerPlayerWeighted.CountS);
+            Console.WriteLine("Computer Paper Count : {0} ", ComputerPlayerWeighted.CountP);
             //Console.WriteLine(Enum.GetName(typeof(Choice),p1.GetChoice()));
         }
         
@@ -62,7 +63,4 @@ namespace RockPaperSissors
         }
       
     }
-
-        
-
 }

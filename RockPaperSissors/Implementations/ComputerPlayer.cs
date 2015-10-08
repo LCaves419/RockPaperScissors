@@ -9,10 +9,10 @@ namespace RockPaperSissors.Implementations
 {
     public class ComputerPlayer : Player
     {
-        private static Random  _randomGenerator = new Random();// static can have 2 comp players 
+        private static Random  _randomGenerator = new Random();// static so can have 2 comp players 
         public static int CountR = 0;
         public static int CountS = 0;
-        public static int CountP = 0;                                                   //and won't use chose the same number
+        public static int CountP = 0;                          //and won't use chose the same number
         public ComputerPlayer(string Name) : base(Name)
         {
            
@@ -30,7 +30,5 @@ namespace RockPaperSissors.Implementations
         {
             return (Choice) 2;
         }
-
-       
     }
 }
