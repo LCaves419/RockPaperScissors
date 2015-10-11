@@ -22,7 +22,7 @@ namespace RockPaperSissors.Implementations
 
             while (choice == Choice.Unknown)
             {
-                Console.Write("\n{0}:Enter a choice (R)ock, (P)aper, (S)issors:",Name);
+                Console.Write("\n{0}:Enter a choice (R)ock, (P)aper, (S)issors:\n",Name);
                 string input = Console.ReadLine();
 
                 switch (input.ToUpper())

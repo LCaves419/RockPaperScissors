@@ -36,28 +36,28 @@ namespace RockPaperSissors
             }
             ProcessResult(p1,p2,result);
 
-            Console.WriteLine("\nComputer Rock Count : {0} ", ComputerPlayerWeighted.CountR);
-            Console.WriteLine("Computer Scissors Count : {0}", ComputerPlayerWeighted.CountS);
-            Console.WriteLine("Computer Paper Count : {0} ", ComputerPlayerWeighted.CountP);
+            Console.WriteLine("\n\tComputer Rock Count : {0} ", ComputerPlayerWeighted.CountR);
+            Console.WriteLine("\tComputer Scissors Count : {0}", ComputerPlayerWeighted.CountS);
+            Console.WriteLine("\tComputer Paper Count : {0} ", ComputerPlayerWeighted.CountP);
             //Console.WriteLine(Enum.GetName(typeof(Choice),p1.GetChoice()));
         }
         
         public int ProcessResult(Player player1, Player player2, MatchResult result)
         {
-            Console.WriteLine("{0} picked  {1}. {2} picked {3}", player1.Name,
+            Console.WriteLine("\n \t{0} picked  {1}. \n \t{2} picked {3}.", player1.Name,
                 Enum.GetName(typeof(Choice),result.Player1_Choice),
                 player2.Name, Enum.GetName(typeof(Choice),result.Player2_Choice));
 
             switch (result.Match_Result)
             {
                 case Enums.Result.Win:
-                    Console.WriteLine("{0} Wins!", player1.Name);
+                    Console.WriteLine("\n \t{0} Wins!", player1.Name);
                     return 1;
                 case Enums.Result.Loss:
-                    Console.WriteLine("{0} Wins!", player2.Name);
+                    Console.WriteLine("\n \t{0} Wins!", player2.Name);
                     return 2;
                 default:
-                    Console.WriteLine("You both tie!");
+                    Console.WriteLine("\n \tYou both tie!");
                     return 0;
             }
         }
